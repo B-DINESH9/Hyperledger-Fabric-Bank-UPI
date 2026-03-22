@@ -1,0 +1,217 @@
+::1 - - [11/Sep/2025:12:15:14 +0000] "GET /health HTTP/1.1" 200 107 "-" "curl/8.7.1"
+
+> blockchain-upi-backend@1.0.0 dev
+> nodemon server.js
+
+[33m[nodemon] 2.0.22[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+Initializing mock blockchain service...
+Mock blockchain service initialized successfully
+info: Blockchain connection initialized successfully {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:15:14.716Z"}
+error: Uncaught Exception: listen EADDRINUSE: address already in use :::5001 {"address":"::","code":"EADDRINUSE","errno":-48,"port":5001,"service":"blockchain-upi-backend","stack":"Error: listen EADDRINUSE: address already in use :::5001\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at startServer (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/server.js:151:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","syscall":"listen","timestamp":"2025-09-11T12:15:14.717Z"}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+::1 - - [11/Sep/2025:12:15:24 +0000] "GET /@vite/client HTTP/1.1" 404 50 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:15:46 +0000] "GET /main.2f6fbcdb98f759c1c6ae.hot-update.json HTTP/1.1" 404 79 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+::1 - - [11/Sep/2025:12:16:00 +0000] "POST /api/auth/login HTTP/1.1" 200 448 "http://localhost:3000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:16:00 +0000] "GET /api/auth/profile HTTP/1.1" 401 33 "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client connected: 38dKfQwtq8t9OVEIAAAB {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:00.324Z"}
+::1 - - [11/Sep/2025:12:16:00 +0000] "GET /api/auth/profile HTTP/1.1" 200 194 "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client disconnected: 38dKfQwtq8t9OVEIAAAB {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:00.328Z"}
+::1 - - [11/Sep/2025:12:16:00 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:16:00 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:16:00 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:16:00 +0000] "GET /api/transactions/history/recent HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:16:00 +0000] "GET /api/transactions/history/recent HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:16:00 +0000] "GET /api/transactions/stats/user HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:16:00 +0000] "GET /api/transactions/stats/user HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client connected: jmJ8BU74nw3PE_fkAAAE {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:00.350Z"}
+info: Validate UPI requested {"requestId":"6ff02c39-3c0c-43f2-ae09-93f591c4b826","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:13.961Z","upiID":"testuser2@bank2"}
+info: Account existence checked {"exists":true,"requestId":"6ff02c39-3c0c-43f2-ae09-93f591c4b826","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:13.962Z","upiID":"testuser2@bank2"}
+info: Account details fetched {"bankCode":"BANK2","isActive":true,"requestId":"6ff02c39-3c0c-43f2-ae09-93f591c4b826","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:13.962Z","upiID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:16:13 +0000] "POST /api/transactions/validate-upi HTTP/1.1" 200 138 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Initiate transfer requested {"amount":2550,"deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:31.707Z","toUPIID":"testuser2@bank2"}
+info: MFA challenge created {"challengeID":"CHL_1757592991708_f6ade1cd2e67","expiresAt":"2025-09-11T12:18:31.708Z","fromUPIID":"testuser1@bank1","n":2,"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:31.708Z","toUPIID":"testuser2@bank2","type":"UPI_ID_LAST_DIGITS"}
+::1 - - [11/Sep/2025:12:16:31 +0000] "POST /api/transactions/transfer/initiate HTTP/1.1" 200 222 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":2550,"challengeID":"CHL_1757592991708_f6ade1cd2e67","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:50.670Z","toUPIID":"testuser2@bank2"}
+warn: MFA verification failed Incorrect answer {"attemptsLeft":2,"challengeID":"CHL_1757592991708_f6ade1cd2e67","code":"WRONG_ANSWER","fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:50.672Z","toUPIID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:16:50 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 400 67 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":2550,"challengeID":"CHL_1757592991708_f6ade1cd2e67","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:52.955Z","toUPIID":"testuser2@bank2"}
+warn: MFA verification failed Incorrect answer {"attemptsLeft":1,"challengeID":"CHL_1757592991708_f6ade1cd2e67","code":"WRONG_ANSWER","fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:16:52.955Z","toUPIID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:16:52 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 400 67 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":2550,"challengeID":"CHL_1757592991708_f6ade1cd2e67","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:17:12.090Z","toUPIID":"testuser2@bank2"}
+warn: MFA verification failed Maximum attempts exceeded. Challenge invalidated. {"attemptsLeft":0,"challengeID":"CHL_1757592991708_f6ade1cd2e67","code":"MAX_ATTEMPTS","fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:17:12.091Z","toUPIID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:17:12 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 400 100 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client disconnected: jmJ8BU74nw3PE_fkAAAE {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:17:16.195Z"}
+::1 - - [11/Sep/2025:12:17:16 +0000] "GET /api/auth/profile HTTP/1.1" 200 194 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:17:16 +0000] "GET /api/auth/profile HTTP/1.1" 200 194 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client connected: K7xRqKsOJgRW7ZKDAAAH {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:17:16.296Z"}
+::1 - - [11/Sep/2025:12:17:16 +0000] "GET /@vite/client HTTP/1.1" 404 50 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Validate UPI requested {"requestId":"de81ae80-b239-4f87-8dc6-391b04156f21","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:17:26.808Z","upiID":"testuser2@bank2"}
+info: Account existence checked {"exists":true,"requestId":"de81ae80-b239-4f87-8dc6-391b04156f21","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:17:26.809Z","upiID":"testuser2@bank2"}
+info: Account details fetched {"bankCode":"BANK2","isActive":true,"requestId":"de81ae80-b239-4f87-8dc6-391b04156f21","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:17:26.809Z","upiID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:17:26 +0000] "POST /api/transactions/validate-upi HTTP/1.1" 200 138 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Initiate transfer requested {"amount":2549.97,"deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:17:34.636Z","toUPIID":"testuser2@bank2"}
+info: MFA challenge created {"challengeID":"CHL_1757593054637_94bba1de3048","expiresAt":"2025-09-11T12:19:34.637Z","fromUPIID":"testuser1@bank1","n":2,"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:17:34.637Z","toUPIID":"testuser2@bank2","type":"UPI_ID_LAST_DIGITS"}
+::1 - - [11/Sep/2025:12:17:34 +0000] "POST /api/transactions/transfer/initiate HTTP/1.1" 200 222 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":2549.97,"challengeID":"CHL_1757593054637_94bba1de3048","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:19:02.715Z","toUPIID":"testuser2@bank2"}
+warn: MFA verification failed Incorrect answer {"attemptsLeft":2,"challengeID":"CHL_1757593054637_94bba1de3048","code":"WRONG_ANSWER","fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:19:02.716Z","toUPIID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:19:02 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 400 67 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Initiate transfer requested {"amount":2549.97,"deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:20:19.606Z","toUPIID":"testuser2@bank2"}
+info: MFA challenge created {"challengeID":"CHL_1757593219607_45b1a7bea51e","expiresAt":"2025-09-11T12:22:19.607Z","fromUPIID":"testuser1@bank1","n":1,"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:20:19.607Z","toUPIID":"testuser2@bank2","type":"RECIPIENT_NAME_PREFIX"}
+::1 - - [11/Sep/2025:12:20:19 +0000] "POST /api/transactions/transfer/initiate HTTP/1.1" 200 227 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":2549.97,"challengeID":"CHL_1757593219607_45b1a7bea51e","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:20:21.189Z","toUPIID":"testuser2@bank2"}
+warn: MFA verification failed Incorrect answer {"attemptsLeft":2,"challengeID":"CHL_1757593219607_45b1a7bea51e","code":"WRONG_ANSWER","fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:20:21.189Z","toUPIID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:20:21 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 400 67 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":2549.97,"challengeID":"CHL_1757593219607_45b1a7bea51e","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:20:22.204Z","toUPIID":"testuser2@bank2"}
+warn: MFA verification failed Incorrect answer {"attemptsLeft":1,"challengeID":"CHL_1757593219607_45b1a7bea51e","code":"WRONG_ANSWER","fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:20:22.205Z","toUPIID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:20:22 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 400 67 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":2549.97,"challengeID":"CHL_1757593219607_45b1a7bea51e","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:20:44.291Z","toUPIID":"testuser2@bank2"}
+warn: MFA verification failed Maximum attempts exceeded. Challenge invalidated. {"attemptsLeft":0,"challengeID":"CHL_1757593219607_45b1a7bea51e","code":"MAX_ATTEMPTS","fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:20:44.291Z","toUPIID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:20:44 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 400 100 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client disconnected: K7xRqKsOJgRW7ZKDAAAH {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:31:28.089Z"}
+info: Client connected: EYpWL3IkSDxf22YZAAAJ {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:31:29.282Z"}
+info: Initiate transfer requested {"amount":2550,"deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:40:43.855Z","toUPIID":"testuser2@bank2"}
+info: MFA challenge created {"challengeID":"CHL_1757594443875_9b9e9e65e712","expiresAt":"2025-09-11T12:42:43.875Z","fromUPIID":"testuser1@bank1","n":4,"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:40:43.875Z","toUPIID":"testuser2@bank2","type":"AMOUNT_DIGIT_SUM"}
+::1 - - [11/Sep/2025:12:40:43 +0000] "POST /api/transactions/transfer/initiate HTTP/1.1" 200 217 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":2550,"challengeID":"CHL_1757594443875_9b9e9e65e712","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:40:47.669Z","toUPIID":"testuser2@bank2"}
+Error performing transfer: Error: Insufficient balance
+    at BlockchainService.transfer (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/services/blockchainService.js:70:15)
+    at /Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/routes/transactions.js:124:49
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+error: Verify transfer error Insufficient balance {"body":{"amount":2550,"answer":"12","challengeID":"CHL_1757594443875_9b9e9e65e712","deviceID":"test002","toUPIID":"testuser2@bank2"},"service":"blockchain-upi-backend","stack":"Error: Insufficient balance\n    at BlockchainService.transfer (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/services/blockchainService.js:70:15)\n    at /Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/routes/transactions.js:124:49\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-09-11T12:40:47.670Z","user":"testuser1@bank1"}
+::1 - - [11/Sep/2025:12:40:47 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 400 32 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":2550,"challengeID":"CHL_1757594443875_9b9e9e65e712","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:40:48.634Z","toUPIID":"testuser2@bank2"}
+warn: MFA verification failed Challenge not found or expired {"attemptsLeft":0,"challengeID":"CHL_1757594443875_9b9e9e65e712","code":"NOT_FOUND","fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:40:48.634Z","toUPIID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:12:40:48 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 410 78 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Initiate transfer requested {"amount":550,"deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:40:58.962Z","toUPIID":"testuser2@bank2"}
+info: MFA challenge created {"challengeID":"CHL_1757594458962_a27a0978209a","expiresAt":"2025-09-11T12:42:58.962Z","fromUPIID":"testuser1@bank1","n":3,"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:40:58.962Z","toUPIID":"testuser2@bank2","type":"AMOUNT_DIGIT_SUM"}
+::1 - - [11/Sep/2025:12:40:58 +0000] "POST /api/transactions/transfer/initiate HTTP/1.1" 200 215 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":550,"challengeID":"CHL_1757594458962_a27a0978209a","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:06.445Z","toUPIID":"testuser2@bank2"}
+info: Transfer executed {"amount":550,"fraudDetected":false,"fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","status":"COMPLETED","timestamp":"2025-09-11T12:41:06.447Z","toUPIID":"testuser2@bank2","transactionID":"TXN_1757594466446_lc38c5pdw"}
+::1 - - [11/Sep/2025:12:41:06 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 200 238 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:06 +0000] "GET /api/auth/profile HTTP/1.1" 200 194 "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client disconnected: EYpWL3IkSDxf22YZAAAJ {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:06.465Z"}
+::1 - - [11/Sep/2025:12:41:06 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:06 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:06 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:06 +0000] "GET /api/transactions/history/recent HTTP/1.1" 200 1364 "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:06 +0000] "GET /api/transactions/history/recent HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:06 +0000] "GET /api/transactions/stats/user HTTP/1.1" 200 142 "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:06 +0000] "GET /api/transactions/stats/user HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client connected: GIyyx-WXvWBMjcMgAAAM {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:06.483Z"}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] starting `node server.js`[39m
+Initializing mock blockchain service...
+Initializing mock blockchain service...
+Initializing mock blockchain service...
+Mock blockchain service initialized successfully
+Mock blockchain service initialized successfully
+Mock blockchain service initialized successfully
+info: Blockchain connection initialized successfully {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:07.330Z"}
+info: Blockchain connection initialized successfully {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:07.330Z"}
+info: Blockchain connection initialized successfully {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:07.330Z"}
+info: Server running on port 5001 {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:07.332Z"}
+info: Environment: development {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:07.332Z"}
+error: Uncaught Exception: listen EADDRINUSE: address already in use :::5001 {"address":"::","code":"EADDRINUSE","errno":-48,"port":5001,"service":"blockchain-upi-backend","stack":"Error: listen EADDRINUSE: address already in use :::5001\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at startServer (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/server.js:151:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","syscall":"listen","timestamp":"2025-09-11T12:41:07.332Z"}
+error: Uncaught Exception: listen EADDRINUSE: address already in use :::5001 {"address":"::","code":"EADDRINUSE","errno":-48,"port":5001,"service":"blockchain-upi-backend","stack":"Error: listen EADDRINUSE: address already in use :::5001\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at startServer (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/server.js:151:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","syscall":"listen","timestamp":"2025-09-11T12:41:07.332Z"}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+Demo user initialized: testadmin@npci (admin)
+Demo user initialized: testuser1@bank1 (user)
+Demo user initialized: testuser2@bank2 (user)
+info: Client connected: vZ2KUj_7W5WqKfz7AAAB {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:08.177Z"}
+ValidationError: The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false (default). This could indicate a misconfiguration which would prevent express-rate-limit from accurately identifying users. See https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/ for more information.
+    at _Validations.<anonymous> (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/node_modules/express-rate-limit/dist/index.cjs:180:15)
+    at _Validations.wrap (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/node_modules/express-rate-limit/dist/index.cjs:313:18)
+    at _Validations.xForwardedForHeader (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/node_modules/express-rate-limit/dist/index.cjs:178:10)
+    at Object.keyGenerator (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/node_modules/express-rate-limit/dist/index.cjs:542:19)
+    at /Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/node_modules/express-rate-limit/dist/index.cjs:595:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/node_modules/express-rate-limit/dist/index.cjs:576:5 {
+  code: 'ERR_ERL_UNEXPECTED_X_FORWARDED_FOR',
+  help: 'https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/'
+}
+::1 - - [11/Sep/2025:12:41:11 +0000] "GET /api/transactions/history/user HTTP/1.1" 200 1364 "http://localhost:3000/transactions" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:11 +0000] "GET /api/transactions/history/user HTTP/1.1" 304 - "http://localhost:3000/transactions" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:22 +0000] "GET /api/auth/profile HTTP/1.1" 200 194 "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client disconnected: vZ2KUj_7W5WqKfz7AAAB {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:22.027Z"}
+::1 - - [11/Sep/2025:12:41:22 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client connected: IPQTG6yOOTvdL-SkAAAD {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:22.032Z"}
+info: Client disconnected: IPQTG6yOOTvdL-SkAAAD {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:22.033Z"}
+::1 - - [11/Sep/2025:12:41:22 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:22 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:22 +0000] "GET /api/transactions/history/recent HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:22 +0000] "GET /api/transactions/history/recent HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:22 +0000] "GET /api/transactions/stats/user HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:12:41:22 +0000] "GET /api/transactions/stats/user HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client connected: HFlz55FVePe3laokAAAF {"service":"blockchain-upi-backend","timestamp":"2025-09-11T12:41:22.045Z"}
+info: Validate UPI requested {"requestId":"b2d92aee-efc7-4018-904d-237ad03682a1","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:03:37.826Z","upiID":"testuser2@bank2"}
+info: Account existence checked {"exists":true,"requestId":"b2d92aee-efc7-4018-904d-237ad03682a1","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:03:37.827Z","upiID":"testuser2@bank2"}
+info: Account details fetched {"bankCode":"BANK2","isActive":true,"requestId":"b2d92aee-efc7-4018-904d-237ad03682a1","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:03:37.827Z","upiID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:13:03:37 +0000] "POST /api/transactions/validate-upi HTTP/1.1" 200 138 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Initiate transfer requested {"amount":550,"deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:03:45.016Z","toUPIID":"testuser2@bank2"}
+info: MFA challenge created {"challengeID":"CHL_1757595825017_223c442cfa9c","expiresAt":"2025-09-11T13:05:45.017Z","fromUPIID":"testuser1@bank1","n":2,"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:03:45.017Z","toUPIID":"testuser2@bank2","type":"UPI_ID_LAST_DIGITS"}
+::1 - - [11/Sep/2025:13:03:45 +0000] "POST /api/transactions/transfer/initiate HTTP/1.1" 200 222 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":550,"challengeID":"CHL_1757595825017_223c442cfa9c","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:03:57.683Z","toUPIID":"testuser2@bank2"}
+warn: MFA verification failed Incorrect answer {"attemptsLeft":2,"challengeID":"CHL_1757595825017_223c442cfa9c","code":"WRONG_ANSWER","fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:03:57.684Z","toUPIID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:13:03:57 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 400 67 "http://localhost:3000/transfer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client disconnected: HFlz55FVePe3laokAAAF {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:08.148Z"}
+::1 - - [11/Sep/2025:13:04:08 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/transfer?ide_webview_request_time=1757595848133" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:13:04:08 +0000] "GET /@vite/client HTTP/1.1" 404 50 "http://localhost:3000/transfer?ide_webview_request_time=1757595848133" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:13:04:08 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/transfer?ide_webview_request_time=1757595848133" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client connected: gCrPdMhuandUmv_HAAAI {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:08.260Z"}
+info: Validate UPI requested {"requestId":"ddbe781a-5f7a-4238-9f4d-36c6599d91a8","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:18.435Z","upiID":"testuser2@bank2"}
+info: Account existence checked {"exists":true,"requestId":"ddbe781a-5f7a-4238-9f4d-36c6599d91a8","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:18.435Z","upiID":"testuser2@bank2"}
+info: Account details fetched {"bankCode":"BANK2","isActive":true,"requestId":"ddbe781a-5f7a-4238-9f4d-36c6599d91a8","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:18.435Z","upiID":"testuser2@bank2"}
+::1 - - [11/Sep/2025:13:04:18 +0000] "POST /api/transactions/validate-upi HTTP/1.1" 200 138 "http://localhost:3000/transfer?ide_webview_request_time=1757595848133" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Initiate transfer requested {"amount":550,"deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:28.632Z","toUPIID":"testuser2@bank2"}
+info: MFA challenge created {"challengeID":"CHL_1757595868650_7031aa5af518","expiresAt":"2025-09-11T13:06:28.650Z","fromUPIID":"testuser1@bank1","n":3,"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:28.650Z","toUPIID":"testuser2@bank2","type":"AMOUNT_DIGIT_SUM"}
+::1 - - [11/Sep/2025:13:04:28 +0000] "POST /api/transactions/transfer/initiate HTTP/1.1" 200 215 "http://localhost:3000/transfer?ide_webview_request_time=1757595848133" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Verify transfer requested {"amount":550,"challengeID":"CHL_1757595868650_7031aa5af518","deviceID":"test002","fromUPIID":"testuser1@bank1","ipAddress":"::1","service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.481Z","toUPIID":"testuser2@bank2"}
+info: Transfer executed {"amount":550,"fraudDetected":false,"fromUPIID":"testuser1@bank1","service":"blockchain-upi-backend","status":"COMPLETED","timestamp":"2025-09-11T13:04:32.484Z","toUPIID":"testuser2@bank2","transactionID":"TXN_1757595872482_e1k7b8flz"}
+::1 - - [11/Sep/2025:13:04:32 +0000] "POST /api/transactions/transfer/verify HTTP/1.1" 200 238 "http://localhost:3000/transfer?ide_webview_request_time=1757595848133" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:13:04:32 +0000] "GET /api/auth/profile HTTP/1.1" 200 193 "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client disconnected: gCrPdMhuandUmv_HAAAI {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.502Z"}
+::1 - - [11/Sep/2025:13:04:32 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client connected: wwxzoFm8qvxF8iPQAAAK {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.506Z"}
+info: Client disconnected: wwxzoFm8qvxF8iPQAAAK {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.507Z"}
+::1 - - [11/Sep/2025:13:04:32 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:13:04:32 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:13:04:32 +0000] "GET /api/transactions/history/recent HTTP/1.1" 200 1623 "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+info: Client connected: O8sYR7gg7dmXypOgAAAM {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.516Z"}
+::1 - - [11/Sep/2025:13:04:32 +0000] "GET /api/transactions/history/recent HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:13:04:32 +0000] "GET /api/transactions/stats/user HTTP/1.1" 200 142 "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+::1 - - [11/Sep/2025:13:04:32 +0000] "GET /api/transactions/stats/user HTTP/1.1" 304 - "http://localhost:3000/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Trae/1.100.3 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36"
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] starting `node server.js`[39m
+Initializing mock blockchain service...
+Initializing mock blockchain service...
+Initializing mock blockchain service...
+Mock blockchain service initialized successfully
+Mock blockchain service initialized successfully
+Mock blockchain service initialized successfully
+info: Blockchain connection initialized successfully {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.888Z"}
+info: Blockchain connection initialized successfully {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.888Z"}
+info: Blockchain connection initialized successfully {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.888Z"}
+info: Server running on port 5001 {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.889Z"}
+info: Environment: development {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:32.889Z"}
+error: Uncaught Exception: listen EADDRINUSE: address already in use :::5001 {"address":"::","code":"EADDRINUSE","errno":-48,"port":5001,"service":"blockchain-upi-backend","stack":"Error: listen EADDRINUSE: address already in use :::5001\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at startServer (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/server.js:151:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","syscall":"listen","timestamp":"2025-09-11T13:04:32.889Z"}
+error: Uncaught Exception: listen EADDRINUSE: address already in use :::5001 {"address":"::","code":"EADDRINUSE","errno":-48,"port":5001,"service":"blockchain-upi-backend","stack":"Error: listen EADDRINUSE: address already in use :::5001\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at startServer (/Users/ramakotirk/Downloads/Mini Projects/Block Chain UPI copy/backend/server.js:151:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","syscall":"listen","timestamp":"2025-09-11T13:04:32.889Z"}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+Demo user initialized: testadmin@npci (admin)
+Demo user initialized: testuser1@bank1 (user)
+Demo user initialized: testuser2@bank2 (user)
+info: Client connected: _QNQKVzVgE_LU9x2AAAB {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:04:34.002Z"}
+info: Client disconnected: _QNQKVzVgE_LU9x2AAAB {"service":"blockchain-upi-backend","timestamp":"2025-09-11T13:05:28.872Z"}
