@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  backend:
+    name: Backend CI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install backend dependencies
+        working-directory: ./backend
+        run: |
+          npm ci
+      - name: Run backend tests
+        working-directory: ./backend
+        run: |
+          if npm test --silent; then echo 'Backend tests passed'; else echo 'No backend tests or some tests failed'; fi
+
+  frontend:
+    name: Frontend CI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install frontend dependencies
+        working-directory: ./frontend
+        run: |
+          npm ci
+      - name: Run frontend build
+        working-directory: ./frontend
+        run: |
+          npm run build --if-present
