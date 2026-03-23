@@ -19,30 +19,24 @@ const Footer = () => {
               using Hyperledger Fabric blockchain technology.
             </p>
             <div className="flex space-x-4">
-              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a
-                href="#"
+              <button
                 className="text-gray-400 hover:text-gray-600 transition-colors"
                 aria-label="GitHub"
               >
                 <FaGithub className="w-5 h-5" />
-              </a>
-              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a
-                href="#"
+              </button>
+              <button
                 className="text-gray-400 hover:text-gray-600 transition-colors"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="w-5 h-5" />
-              </a>
-              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a
-                href="#"
+              </button>
+              <button
                 className="text-gray-400 hover:text-gray-600 transition-colors"
                 aria-label="Twitter"
               >
                 <FaTwitter className="w-5 h-5" />
-              </a>
+              </button>
             </div>
           </div>
 
@@ -53,28 +47,24 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <span className="text-gray-600 hover:text-gray-900 transition-colors cursor-pointer">
                   Fraud Detection
-                </a>
+                </span>
               </li>
               <li>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <span className="text-gray-600 hover:text-gray-900 transition-colors cursor-pointer">
                   Tamper Prevention
-                </a>
+                </span>
               </li>
               <li>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <span className="text-gray-600 hover:text-gray-900 transition-colors cursor-pointer">
                   Real-time Monitoring
-                </a>
+                </span>
               </li>
               <li>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <span className="text-gray-600 hover:text-gray-900 transition-colors cursor-pointer">
                   Audit Trail
-                </a>
+                </span>
               </li>
             </ul>
           </div>

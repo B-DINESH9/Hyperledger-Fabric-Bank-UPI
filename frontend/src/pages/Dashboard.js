@@ -10,7 +10,6 @@ import {
   FaArrowUp,
   FaArrowDown,
   FaChartLine,
-  FaBell, // eslint-disable-line no-unused-vars
   FaSync
 } from 'react-icons/fa';
 import axios from 'axios';
