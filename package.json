@@ -1,0 +1,48 @@
+{
+  "name": "blockchain-upi-system",
+  "version": "1.0.0",
+  "description": "A secure, blockchain-based UPI payment system with fraud detection and real-time monitoring",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./setup.sh",
+    "start": "./start-all.sh",
+    "start:backend": "./start-backend.sh",
+    "start:frontend": "./start-frontend.sh",
+    "test": "./test-system.sh",
+    "build": "./build-production.sh",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "clean": "rm -rf backend/node_modules frontend/node_modules frontend/build"
+  },
+  "keywords": [
+    "blockchain",
+    "upi",
+    "payment",
+    "fraud-detection",
+    "react",
+    "nodejs",
+    "hyperledger-fabric"
+  ],
+  "author": "Blockchain UPI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/blockchain-upi.git"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "dependencies": {
+    "postcss-flexbugs-fixes": "^5.0.2"
+  }
+}
