@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { FaExchangeAlt, FaUser, FaMobile, FaRupeeSign, FaCheck, FaShieldAlt } from 'react-icons/fa';
+import { FaExchangeAlt, FaUser, FaMobile, FaRupeeSign, FaCheck, FaTimes, FaShieldAlt } from 'react-icons/fa'; // eslint-disable-line no-unused-vars
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
@@ -130,7 +130,7 @@ const Transfer = () => {
     }
     setVerifying(true);
     try {
-      await axios.post('/api/transactions/transfer/verify', {
+      const resp = await axios.post('/api/transactions/transfer/verify', { // eslint-disable-line no-unused-vars
         toUPIID: formData.toUPIID,
         amount: parseFloat(formData.amount),
         deviceID: formData.deviceID,

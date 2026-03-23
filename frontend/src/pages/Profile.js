@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { FaUser, FaShieldAlt, FaEdit, FaSave, FaTimes } from 'react-icons/fa';
+import { FaUser, FaWallet, FaShieldAlt, FaEdit, FaSave, FaTimes } from 'react-icons/fa'; // eslint-disable-line no-unused-vars
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
 const Profile = () => {
-  const { logout } = useAuth();
+  const { user, logout } = useAuth(); // eslint-disable-line no-unused-vars
   const [accountData, setAccountData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [editing, setEditing] = useState(false);
