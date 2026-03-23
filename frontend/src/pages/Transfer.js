@@ -5,14 +5,12 @@ import React, { useEffect, useState } from 'react';
 
 function Transfer() {
     const [challenge, setChallenge] = useState(null);
-    const [resp, setResp] = useState(null);
 
     useEffect(() => {
         // Assume this fetches a challenge
         const fetchChallenge = async () => {
             const result = await fetch('/api/challenge');
             const data = await result.json();
-            setResp(data); // Ensure resp variable is used
             setChallenge(data.challenge);
         };
 
