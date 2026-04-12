@@ -19,27 +19,27 @@ const Footer = () => {
               using Hyperledger Fabric blockchain technology.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="#"
+              <button
+                type="button"
                 className="text-gray-400 hover:text-gray-600 transition-colors"
                 aria-label="GitHub"
               >
                 <FaGithub className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
+              </button>
+              <button
+                type="button"
                 className="text-gray-400 hover:text-gray-600 transition-colors"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
+              </button>
+              <button
+                type="button"
                 className="text-gray-400 hover:text-gray-600 transition-colors"
                 aria-label="Twitter"
               >
                 <FaTwitter className="w-5 h-5" />
-              </a>
+              </button>
             </div>
           </div>
 
@@ -50,24 +50,24 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <button type="button" className="text-left text-gray-600 hover:text-gray-900 transition-colors">
                   Fraud Detection
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <button type="button" className="text-left text-gray-600 hover:text-gray-900 transition-colors">
                   Tamper Prevention
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <button type="button" className="text-left text-gray-600 hover:text-gray-900 transition-colors">
                   Real-time Monitoring
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <button type="button" className="text-left text-gray-600 hover:text-gray-900 transition-colors">
                   Audit Trail
-                </a>
+                </button>
               </li>
             </ul>
           </div>

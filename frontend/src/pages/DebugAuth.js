@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import axios from 'axios';
 
@@ -7,11 +7,7 @@ const DebugAuth = () => {
   const [debugInfo, setDebugInfo] = useState({});
   const [testResult, setTestResult] = useState('');
 
-  useEffect(() => {
-    updateDebugInfo();
-  }, [user, token]);
-
-  const updateDebugInfo = () => {
+  const updateDebugInfo = useCallback(() => {
     const info = {
       isAuthenticated,
       hasUser: !!user,
@@ -25,7 +21,11 @@ const DebugAuth = () => {
       } : null
     };
     setDebugInfo(info);
-  };
+  }, [user, token, isAuthenticated]);
+
+  useEffect(() => {
+    updateDebugInfo();
+  }, [updateDebugInfo]);
 
   const testTransfer = async () => {
     try {
