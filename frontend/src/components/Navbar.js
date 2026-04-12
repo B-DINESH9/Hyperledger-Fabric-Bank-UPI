@@ -3,10 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { SocketContext } from '../context/SocketContext';
 import Icon from '../components/Icon';
+import './Navbar.css';
 
 const Navbar = () => {
     const { user, logout } = useContext(AuthContext);
     const { socket } = useContext(SocketContext);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const location = useLocation();
 
@@ -25,39 +27,52 @@ const Navbar = () => {
 
     const handleLogout = () => {
         logout();
-        socket.disconnect(); // Ensure socket disconnection on logout
+        if (socket) {
+            socket.disconnect(); // Ensure socket disconnection on logout
+        }
+        setIsMenuOpen(false);
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
     };
 
     return (
         <nav className='navbar'>
             <div className='logo'>
-                <Link to='/'>Bank UPI</Link>
+                <Link to='/' onClick={closeMenu}>Bank UPI</Link>
             </div>
-            <ul className={`nav-links ${isMobile ? 'mobile' : 'desktop'}`}> 
+            <ul className={`nav-links ${isMobile && isMenuOpen ? 'mobile-open' : ''} ${isMobile ? 'mobile' : 'desktop'}`}> 
                 <li className={location.pathname === '/' ? 'active' : ''}>
-                    <Link to='/'>Home</Link>
+                    <Link to='/' onClick={closeMenu}>Home</Link>
                 </li>
                 <li className={location.pathname === '/about' ? 'active' : ''}>
-                    <Link to='/about'>About</Link>
+                    <Link to='/about' onClick={closeMenu}>About</Link>
                 </li>
                 {user ? (
                     <>
-                        <li>
-                            <Link to='/dashboard'>Dashboard</Link>
+                        <li className={location.pathname === '/dashboard' ? 'active' : ''}>
+                            <Link to='/dashboard' onClick={closeMenu}>Dashboard</Link>
                         </li>
                         <li>
-                            <button onClick={handleLogout}>Logout</button>
+                            <button className='logout-btn' onClick={handleLogout}>Logout</button>
                         </li>
                     </>
                 ) : (
                     <li className={location.pathname === '/login' ? 'active' : ''}>
-                        <Link to='/login'>Login</Link>
+                        <Link to='/login' onClick={closeMenu}>Login</Link>
                     </li>
                 )}
             </ul>
-            <div className='menu-icon' onClick={() => setIsMobile(!isMobile)}>
-                <Icon name={isMobile ? 'close' : 'menu'} />
-            </div>
+            {isMobile && (
+                <div className='menu-icon' onClick={toggleMenu}>
+                    <Icon name={isMenuOpen ? 'close' : 'menu'} />
+                </div>
+            )}
         </nav>
     );
 };
