@@ -1,6 +1,4 @@
 import React from 'react';
-import { FaUser } from 'react-icons/fa';
-// Removed unused FaTimes import
 
 const Navbar = () => {
     return (
