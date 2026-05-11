@@ -82,7 +82,7 @@ export const SocketProvider = ({ children }) => {
         newSocket.close();
       };
     }
-  }, [user, isAdmin]);
+  }, [user?.upiID, isAdmin]);
 
   const emitTransactionUpdate = (data) => {
     if (socket && connected) {

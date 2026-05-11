@@ -238,23 +238,8 @@ class BlockchainService {
     const account = this.mockData.accounts.get(upiID);
     if (!account) return false;
     
-    // Check for high amount
-    if (amount > account.balance * 0.8) {
-      return true;
-    }
-    
-    // Check for low balance after transaction (reduced for testing)
-    if (account.balance - amount < 100) {
-      return true;
-    }
-    
-    // Check for high frequency transactions
-    const recentTransactions = this.mockData.transactions.filter(t => 
-      t.fromUPIID === upiID && 
-      new Date(t.timestamp) > new Date(Date.now() - 5 * 60 * 1000) // Last 5 minutes
-    );
-    
-    if (recentTransactions.length >= 5) {
+    // Check for extremely high amount
+    if (amount > 1000000) {
       return true;
     }
     

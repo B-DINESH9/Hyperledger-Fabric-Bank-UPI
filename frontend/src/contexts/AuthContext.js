@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
@@ -122,7 +122,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const refreshUser = async () => {
+  const refreshUser = useCallback(async () => {
     try {
       const response = await axios.get('/api/auth/profile');
       setUser(response.data.user);
@@ -132,7 +132,7 @@ export const AuthProvider = ({ children }) => {
       console.error('Error refreshing user data:', error);
       return { success: false, error: error.message };
     }
-  };
+  }, []);
 
   const value = {
     user,
