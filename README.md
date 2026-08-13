@@ -1,5 +1,7 @@
 # 🔗 Blockchain UPI System
 
+[![Demo Video](https://img.shields.io/badge/YouTube-Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/W8t4YhAVe8M?si=syz_3MSfSbamFKnY)
+
 A secure, blockchain-based UPI payment system with fraud detection, real-time monitoring, and admin analytics.
 
 ## 🚀 Features
@@ -12,6 +14,31 @@ A secure, blockchain-based UPI payment system with fraud detection, real-time mo
 - **📱 Responsive UI**: Modern, mobile-friendly interface
 
 ## 🏗️ Architecture
+
+```mermaid
+flowchart TD
+    USER["USER (MOBILE/WEB)"]
+    FRONTEND["FRONTEND (React.js)<br/>User Interface, Dashboard"]
+    BACKEND["BACKEND (Node.js)<br/>Authentication, Business Logic"]
+    SECURITY["SECURITY LAYER<br/>• Multi-Factor Authentication (MFA)<br/>• Elliptic Curve Cryptography (ECC - 256-bit) (no encryption)"]
+    
+    subgraph BLOCKCHAIN_NETWORK ["BLOCKCHAIN NETWORK (Hyperledger Fabric)"]
+        direction TB
+        Peer1["Peer Nodes"] <--> Chaincode["Chaincode<br/>(Smart Contracts)"] <--> Peer2["Peer Nodes"]
+        Raft["Raft Consensus Mechanism"]
+        Peer1 <--> Raft
+        Chaincode <--> Raft
+        Peer2 <--> Raft
+    end
+    
+    LEDGER["DISTRIBUTED LEDGER<br/>(CouchDB)"]
+
+    USER <--> FRONTEND
+    FRONTEND --> BACKEND
+    BACKEND -- "Secured Data Flow" --> SECURITY
+    SECURITY <--> BLOCKCHAIN_NETWORK
+    BLOCKCHAIN_NETWORK -- "Ledger Updates" --> LEDGER
+```
 
 - **Frontend**: React.js with Tailwind CSS
 - **Backend**: Node.js with Express.js
